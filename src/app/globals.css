@@ -1,0 +1,179 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url(/styles/reset.css);
+
+body {
+  background-color: #2b2b2b;
+  color: #ffffff;
+}
+
+@layer base {
+  @font-face {
+    font-family: "SpaceMono-Bold";
+    src: url(../../public/font/SpaceMono-Bold.ttf);
+  }
+
+  @font-face {
+    font-family: "SpaceMono-Regular";
+    src: url(../../public/font/SpaceMono-Regular.ttf);
+  }
+
+  @font-face {
+    font-family: "Sans-Bold";
+    src: url(../../public/font/WorkSans-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: "WorkSans-Bold";
+    src: url(../../public/font/WorkSans-SemiBold.ttf);
+  }
+
+  @font-face {
+    font-family: "WorkSans-Regular";
+    src: url(../../public/font/WorkSans-Regular.ttf);
+  }
+}
+
+@layer components {
+}
+
+@layer utilities {
+  body {
+    color: var(--White, #fff);
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%; /* 22.4px */
+  }
+
+  .H1 {
+    font-family: "SpaceMono-Bold";
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 73.7px */
+    text-transform: capitalize;
+  }
+
+  .H2 {
+    font-family: "SpaceMono-Bold";
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 110%; /* 56.1px */
+    text-transform: capitalize;
+  }
+
+  .H3 {
+    /* H3 - Space Mono */
+    font-family: "SpaceMono-Bold";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+  }
+
+  .H4 {
+    font-family: "SpaceMono-Bold";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+
+  .H5 {
+    font-family: "SpaceMono-Bold";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 160%; /* 35.2px */
+    text-transform: capitalize;
+  }
+
+  .caption {
+    font-family: "SpaceMono-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+  }
+
+  .H1Sans {
+    font-family: "WorkSans-Bold";
+    font-size: 67px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 73.7px */
+    text-transform: capitalize;
+  }
+
+  .H2Sans {
+    font-family: "WorkSans-Bold";
+    font-size: 51px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 110%; /* 56.1px */
+    text-transform: capitalize;
+  }
+  .H3Sans {
+    font-family: "WorkSans-Bold";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 120%; /* 45.6px */
+    text-transform: capitalize;
+  }
+
+  .H4Sans {
+    font-family: "WorkSans-Bold";
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 39.2px */
+    text-transform: capitalize;
+  }
+
+  .H5Sans {
+    font-family: "WorkSans-Bold";
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 140%; /* 30.8px */
+    text-transform: capitalize;
+  }
+
+  .captionSans {
+    font-family: "WorkSans-Regular";
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 110%; /* 13.2px */
+  }
+
+  .gradientPurple {
+    background: linear-gradient(128deg, #a259ff 49.75%, #377df7 136.56%);
+  }
+
+  .gradientPink {
+    background: var(
+      --gradient-1,
+      linear-gradient(101deg, #a259ff 13.57%, #ff6250 97.65%)
+    );
+  }
+
+  .timer_gradient {
+    background: linear-gradient(rgba(162, 89, 255, 0), rgba(162, 89, 255, 1)),
+      url(../../public/img/timer/banner.png) no-repeat center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .timer_bg {
+    background-color: rgba(53, 59, 59, 0.5);
+    backdrop-filter: blur(50px);
+  }
+}
